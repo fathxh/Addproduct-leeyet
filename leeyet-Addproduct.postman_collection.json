@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "aa2edb04-8d66-4b58-a765-7638188e4e96",
+		"name": "leeyet-Addproduct",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25417497"
+	},
+	"item": [
+		{
+			"name": "get list from database",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "To add a product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photos",
+							"type": "file",
+							"src": [
+								"/C:/Users/fatha/Downloads/images.jpeg",
+								"/C:/Users/fatha/Downloads/download (5).jpeg",
+								"/C:/Users/fatha/Downloads/download (4).jpeg",
+								"/C:/Users/fatha/Downloads/download (3).jpeg"
+							]
+						},
+						{
+							"key": "name",
+							"value": "s22ultra",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "best android phone",
+							"type": "text"
+						},
+						{
+							"key": "discount",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "124999",
+							"type": "text"
+						},
+						{
+							"key": "shipping",
+							"value": "50",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/addproduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"addproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "to update or edit",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "photos",
+							"type": "file",
+							"src": [
+								"/C:/Users/fatha/Downloads/download (5).jpeg",
+								"/C:/Users/fatha/Downloads/download (3).jpeg"
+							]
+						},
+						{
+							"key": "name",
+							"value": "s23ultra",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Best android phone",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "124999",
+							"type": "text"
+						},
+						{
+							"key": "discount",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "shipping",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/update/s22ultra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update",
+						"s22ultra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/delete/iphone14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"delete",
+						"iphone14"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

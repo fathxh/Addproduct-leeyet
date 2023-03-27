@@ -1,0 +1,26 @@
+{
+  "name": "leeyet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon",
+    "transpile": "tsc"
+  },
+  "author": "Abdul Fathah K E",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/mongoose": "5.0.9",
+    "nodemon": "^1.19.4",
+    "ts-node": "^5.0.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "@types/multer": "^1.4.7",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.3",
+    "multer": "^1.4.5-lts.1"
+  }
+}
